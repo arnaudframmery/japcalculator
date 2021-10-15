@@ -25,7 +25,7 @@ jobs:
 
       # run tests!
       - run: yarn test
-      - run: yarn run eslint ./src
+      - run: yarn run eslint ./**/*.{ts,tsx}
       - run: npx yarn-audit-fix
       - run: yarn build
 
