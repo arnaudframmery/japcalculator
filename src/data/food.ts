@@ -29,18 +29,23 @@ export const FOOD_ITEMS: Array<FoodItem> = [
     imageUrl: California
   },
   {
-    name: "Boeuf Fromage (Miam)",
+    name: "Boeuf Fromage",
     kcal: 175,
     imageUrl: BeefCheese
   },
   {
-    name: "Soupe Miso (Berk)",
+    name: "Soupe Miso",
     kcal: 50,
     imageUrl: Miso
   },
   {
     name: "Viande",
     kcal: 130,
+    imageUrl: Meat
+  },
+  {
+    name: "Viande végé",
+    kcal: 40,
     imageUrl: Meat
   }
 ];
