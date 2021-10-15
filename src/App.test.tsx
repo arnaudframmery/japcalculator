@@ -1,8 +1,8 @@
-import React from "react";
-import { render } from "@testing-library/react";
-import App from "./App";
-import { Provider } from "react-redux";
-import { store } from "./redux/config";
+import React from 'react';
+import { render } from '@testing-library/react';
+import App from './App';
+import { Provider } from 'react-redux';
+import { store } from './redux/config';
 
 // jest.mock("mapbox-gl", () => {
 //   return {
@@ -18,7 +18,7 @@ import { store } from "./redux/config";
 //   };
 // });
 
-test("renders App", () => {
+test('renders App', () => {
   const { baseElement } = render(
     <Provider store={store}>
       <App />

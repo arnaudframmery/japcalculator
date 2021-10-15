@@ -1,15 +1,15 @@
-import React from "react";
-import { withStyles } from "@material-ui/core/styles";
-import { CSSProperties } from "@material-ui/styles";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Typography from "@material-ui/core/Typography";
+import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import { CSSProperties } from '@material-ui/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Typography from '@material-ui/core/Typography';
 
-import { CustomTheme } from "../../style/theme";
+import { CustomTheme } from '../../style/theme';
 
-type ClassNames = "container" | "picture" | "restaurantName" | "address";
+type ClassNames = 'container' | 'picture' | 'restaurantName' | 'address';
 interface OwnProps {
   classes: Record<ClassNames, string>;
   imgSrc: string;
@@ -50,7 +50,7 @@ export const RestaurantCard: React.FC<Props> = (props: Props) => {
 const styles = (theme: CustomTheme): Record<ClassNames, CSSProperties> => ({
   container: {
     width: 220,
-    textAlign: "left"
+    textAlign: 'left'
   },
   picture: {
     height: 128

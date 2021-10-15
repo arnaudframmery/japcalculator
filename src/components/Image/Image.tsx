@@ -1,9 +1,9 @@
-import React from "react";
-import { withStyles } from "@material-ui/core/styles";
+import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
 
-import { CustomTheme } from "../../style/theme";
+import { CustomTheme } from '../../style/theme';
 
-type ClassNames = "container";
+type ClassNames = 'container';
 interface OwnProps {
   classes: Record<ClassNames, string>;
   imgUrl: string;
@@ -21,8 +21,8 @@ export const Image: React.FC<Props> = (props: Props) => {
 const styles = (theme: CustomTheme): Record<ClassNames, any> => ({
   container: (props: Props) => ({
     background: `url(${props.imgUrl})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
     height: props.height,
     width: props.width
   })

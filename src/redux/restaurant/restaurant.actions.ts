@@ -2,8 +2,8 @@ import {
   FETCH_RESTAURANT_REQUEST,
   FETCH_RESTAURANT_SUCCESS,
   FETCH_RESTAURANT_ERROR
-} from "./restaurant.constants";
-import { Restaurant } from "./restaurant.types";
+} from './restaurant.constants';
+import { Restaurant } from './restaurant.types';
 
 export const fetchRestaurant = (fetchNext = false) => ({
   type: FETCH_RESTAURANT_REQUEST as typeof FETCH_RESTAURANT_REQUEST,

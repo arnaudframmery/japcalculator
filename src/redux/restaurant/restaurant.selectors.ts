@@ -1,7 +1,7 @@
-import { State } from "../state";
+import { State } from '../state';
 
-import { RESTAURANT_STATE_SLICE_NAME } from "./restaurant.state";
-import { Restaurant } from "./restaurant.types";
+import { RESTAURANT_STATE_SLICE_NAME } from './restaurant.state';
+import { Restaurant } from './restaurant.types';
 
 export const getRestaurants = (state: State): Array<Restaurant> => {
   if (state && RESTAURANT_STATE_SLICE_NAME in state) {
