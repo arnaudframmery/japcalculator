@@ -16,7 +16,7 @@ import { FoodTile } from '../../components';
 import { sendData } from '../../utils/send-data';
 
 type ClassNames =
-  | 'container'
+  | "container"
   | 'circleContainer'
   | 'redCircle'
   | 'kanjiSun'
