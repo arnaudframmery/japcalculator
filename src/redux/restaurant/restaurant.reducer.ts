@@ -1,10 +1,10 @@
-import { RestaurantActions } from "./restaurant.actions";
-import { RestaurantState } from "./restaurant.state";
+import { RestaurantActions } from './restaurant.actions';
+import { RestaurantState } from './restaurant.state';
 import {
   FETCH_RESTAURANT_REQUEST,
   FETCH_RESTAURANT_SUCCESS,
   FETCH_RESTAURANT_ERROR
-} from "./restaurant.constants";
+} from './restaurant.constants';
 
 const initialState: RestaurantState = {
   isLoadingRestaurant: false,

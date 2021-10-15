@@ -1,4 +1,4 @@
-import axios, { AxiosInstance } from "axios";
+import axios, { AxiosInstance } from 'axios';
 
 const API_BASE_URL = process.env.REACT_APP_BACK_URL as string;
 
@@ -20,7 +20,7 @@ export class CustomAxiosInstance {
     }
     if (CustomAxiosInstance.token === token) {
       return CustomAxiosInstance.axiosInstance;
-    } else if (token === "") {
+    } else if (token === '') {
       CustomAxiosInstance.axiosInstance = axios.create({
         baseURL: API_BASE_URL,
         timeout: 60000
@@ -30,7 +30,7 @@ export class CustomAxiosInstance {
       CustomAxiosInstance.axiosInstance = axios.create({
         baseURL: API_BASE_URL,
         timeout: 60000,
-        headers: { Authorization: "Token " + token }
+        headers: { Authorization: 'Token ' + token }
       });
       return CustomAxiosInstance.axiosInstance;
     }
@@ -38,9 +38,9 @@ export class CustomAxiosInstance {
 
   public static removeBaseUrlFromUrl(url: string): string {
     if (url) {
-      const urlWithoutBase = url.replace(API_BASE_URL_UNSECURE, "");
+      const urlWithoutBase = url.replace(API_BASE_URL_UNSECURE, '');
       return urlWithoutBase;
     }
-    return "";
+    return '';
   }
 }

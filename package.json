@@ -54,6 +54,10 @@
   },
   "devDependencies": {
     "@types/history": "^4.7.5",
-    "@types/react-redux": "^7.1.7"
+    "@types/react-redux": "^7.1.7",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-plugin-react": "^7.26.1"
   }
 }
